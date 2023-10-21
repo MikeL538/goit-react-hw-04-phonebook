@@ -12,7 +12,6 @@ export const ContactForm = ({
 
   const handleChange = event => {
     const result = event.target.value.replace(/[^\d\s-+()]/g, ''); // Allows numbers, spaces, dashes, pluses and brackets
-
     setValue(result);
     handleInputChange(event);
   };
